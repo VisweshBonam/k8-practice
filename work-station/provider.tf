@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "practice-bucket-k8"
+    bucket = "practice-bucket-k8s"
     key    = "k8-work-station"
     region = "us-east-1"
     encrypt        = true
