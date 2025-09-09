@@ -4,7 +4,7 @@ resource "aws_instance" "work_station" {
   vpc_security_group_ids = [aws_security_group.work_station_sg.id]
 
   iam_instance_profile   = "TerraformAdminPermissions"
-  user_data              = file("docker.sh")
+  user_data              = file("work-station.sh")
 
    root_block_device {
     volume_size = 50
