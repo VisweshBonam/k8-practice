@@ -8,3 +8,7 @@ metadata:
   annotations:
     jenkins: "http://jenkins/viswesh.com"
     desciption: "This pod is created by viswesh"
+spec:
+  containers:
+    - name: nginx
+      image: nginx
